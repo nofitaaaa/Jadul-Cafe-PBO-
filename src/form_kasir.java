@@ -89,6 +89,8 @@ public class form_kasir extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jSlider1 = new javax.swing.JSlider();
         exit = new javax.swing.JButton();
+        jLabel18 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -365,6 +367,7 @@ public class form_kasir extends javax.swing.JFrame {
         kembalian.setBounds(650, 550, 270, 90);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Jadul's Cafe");
         getContentPane().add(jLabel1);
         jLabel1.setBounds(430, 0, 240, 100);
@@ -379,6 +382,16 @@ public class form_kasir extends javax.swing.JFrame {
         });
         getContentPane().add(exit);
         exit.setBounds(970, 690, 120, 40);
+
+        jLabel18.setIcon(new javax.swing.ImageIcon("F:\\234.PNG")); // NOI18N
+        jLabel18.setMaximumSize(new java.awt.Dimension(200, 200));
+        jLabel18.setMinimumSize(new java.awt.Dimension(100, 100));
+        getContentPane().add(jLabel18);
+        jLabel18.setBounds(280, 0, 140, 100);
+
+        jPanel1.setBackground(new java.awt.Color(0, 0, 0));
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(0, 0, 1110, 120);
 
         setBounds(0, 0, 1106, 767);
     }// </editor-fold>//GEN-END:initComponents
@@ -868,6 +881,7 @@ public class form_kasir extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -876,6 +890,7 @@ public class form_kasir extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JSlider jSlider1;
     private javax.swing.JTextField kembalian;
     private javax.swing.JTextField kopi;
