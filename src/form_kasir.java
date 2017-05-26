@@ -90,6 +90,10 @@ public class form_kasir extends javax.swing.JFrame {
         jSlider1 = new javax.swing.JSlider();
         exit = new javax.swing.JButton();
         jLabel18 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jSlider2 = new javax.swing.JSlider();
+        jPanel2 = new javax.swing.JPanel();
+        jDesktopPane1 = new javax.swing.JDesktopPane();
         jPanel1 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -164,7 +168,7 @@ public class form_kasir extends javax.swing.JFrame {
         getContentPane().add(tahulontong);
         tahulontong.setBounds(200, 290, 180, 30);
         getContentPane().add(bayar);
-        bayar.setBounds(220, 620, 200, 40);
+        bayar.setBounds(400, 600, 200, 40);
         getContentPane().add(nasibantingan);
         nasibantingan.setBounds(200, 390, 180, 30);
         getContentPane().add(escaon);
@@ -259,6 +263,7 @@ public class form_kasir extends javax.swing.JFrame {
         MEO.setBounds(980, 390, 70, 30);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText(" MAKANAN");
         getContentPane().add(jLabel2);
         jLabel2.setBounds(40, 150, 110, 30);
@@ -270,6 +275,7 @@ public class form_kasir extends javax.swing.JFrame {
         getContentPane().add(tahugenjrot);
         tahugenjrot.setBounds(200, 440, 180, 30);
 
+        clear.setBackground(new java.awt.Color(255, 255, 255));
         clear.setText("HAPUS");
         clear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -277,8 +283,10 @@ public class form_kasir extends javax.swing.JFrame {
             }
         });
         getContentPane().add(clear);
-        clear.setBounds(970, 580, 120, 40);
+        clear.setBounds(730, 580, 120, 40);
 
+        bt_total.setBackground(new java.awt.Color(51, 51, 255));
+        bt_total.setForeground(new java.awt.Color(255, 255, 255));
         bt_total.setText("TOTAL");
         bt_total.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -286,12 +294,13 @@ public class form_kasir extends javax.swing.JFrame {
             }
         });
         getContentPane().add(bt_total);
-        bt_total.setBounds(80, 550, 120, 40);
+        bt_total.setBounds(260, 530, 120, 40);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("BAYAR");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(110, 620, 90, 30);
+        jLabel4.setBounds(290, 600, 90, 30);
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel5.setText("X");
@@ -348,13 +357,16 @@ public class form_kasir extends javax.swing.JFrame {
         getContentPane().add(jLabel15);
         jLabel15.setBounds(940, 440, 30, 30);
         getContentPane().add(total);
-        total.setBounds(220, 550, 200, 40);
+        total.setBounds(400, 530, 200, 40);
 
         jLabel16.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
         jLabel16.setText("MINUMAN");
         getContentPane().add(jLabel16);
         jLabel16.setBounds(580, 150, 110, 30);
 
+        bt_kembalian.setBackground(new java.awt.Color(51, 51, 255));
+        bt_kembalian.setForeground(new java.awt.Color(255, 255, 255));
         bt_kembalian.setText("KEMBALIAN");
         bt_kembalian.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -362,9 +374,9 @@ public class form_kasir extends javax.swing.JFrame {
             }
         });
         getContentPane().add(bt_kembalian);
-        bt_kembalian.setBounds(510, 580, 120, 40);
+        bt_kembalian.setBounds(260, 670, 120, 40);
         getContentPane().add(kembalian);
-        kembalian.setBounds(650, 550, 270, 90);
+        kembalian.setBounds(400, 660, 200, 50);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -372,8 +384,10 @@ public class form_kasir extends javax.swing.JFrame {
         getContentPane().add(jLabel1);
         jLabel1.setBounds(430, 0, 240, 100);
         getContentPane().add(jSlider1);
-        jSlider1.setBounds(0, 100, 1100, 26);
+        jSlider1.setBounds(0, 490, 1100, 26);
 
+        exit.setBackground(new java.awt.Color(255, 0, 0));
+        exit.setForeground(new java.awt.Color(255, 255, 255));
         exit.setText("EXIT");
         exit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -381,7 +395,7 @@ public class form_kasir extends javax.swing.JFrame {
             }
         });
         getContentPane().add(exit);
-        exit.setBounds(970, 690, 120, 40);
+        exit.setBounds(880, 580, 120, 40);
 
         jLabel18.setIcon(new javax.swing.ImageIcon("F:\\234.PNG")); // NOI18N
         jLabel18.setMaximumSize(new java.awt.Dimension(200, 200));
@@ -389,9 +403,21 @@ public class form_kasir extends javax.swing.JFrame {
         getContentPane().add(jLabel18);
         jLabel18.setBounds(280, 0, 140, 100);
 
+        jLabel17.setIcon(new javax.swing.ImageIcon("F:\\567.PNG")); // NOI18N
+        getContentPane().add(jLabel17);
+        jLabel17.setBounds(670, 0, 100, 110);
+        getContentPane().add(jSlider2);
+        jSlider2.setBounds(0, 110, 1100, 26);
+
+        jPanel2.setBackground(new java.awt.Color(0, 0, 0));
+        getContentPane().add(jPanel2);
+        jPanel2.setBounds(0, 0, 1100, 130);
+        getContentPane().add(jDesktopPane1);
+        jDesktopPane1.setBounds(0, 120, 1100, 380);
+
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
         getContentPane().add(jPanel1);
-        jPanel1.setBounds(0, 0, 1110, 120);
+        jPanel1.setBounds(-10, 500, 1110, 240);
 
         setBounds(0, 0, 1106, 767);
     }// </editor-fold>//GEN-END:initComponents
@@ -873,6 +899,7 @@ public class form_kasir extends javax.swing.JFrame {
     private javax.swing.JTextField espisangijo;
     private javax.swing.JRadioButton espisangijo1;
     private javax.swing.JButton exit;
+    private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -881,6 +908,7 @@ public class form_kasir extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -891,7 +919,9 @@ public class form_kasir extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JSlider jSlider1;
+    private javax.swing.JSlider jSlider2;
     private javax.swing.JTextField kembalian;
     private javax.swing.JTextField kopi;
     private javax.swing.JRadioButton kopi1;
